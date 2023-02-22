@@ -2,65 +2,65 @@ import { styled } from "..";
 import Link from "next/link";
 
 export const HomeContainer = styled("main", {
-    display: "flex",
-    // gap: "3rem", // o slider não contabiliza esse tamanho
-    width: "100%",
-    maxWidth: "calc(100vw - (100vw - 1180px) / 2)",
-    marginLeft: "auto",
-    minHeight: 656,
+	display: "flex",
+	// gap: "3rem", // o slider não contabiliza esse tamanho
+	width: "100%",
+	maxWidth: "calc(100vw - (100vw - 1180px) / 2)",
+	marginLeft: "auto",
+	minHeight: 656,
 });
 
 export const Product = styled(Link, {
-    background: "linear-gradient(180deg, #1ea483 0%, #7465d4 100%)",
-    borderRadius: 8,
-    cursor: "pointer",
-    position: "relative",
-    overflow: "hidden",
+	background: "linear-gradient(180deg, #1ea483 0%, #7465d4 100%)",
+	borderRadius: 8,
+	cursor: "pointer",
+	position: "relative",
+	overflow: "hidden",
 
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+	display: "flex",
+	alignItems: "center",
+	justifyContent: "center",
 
-    img: {
-        objectFit: "cover",
-    },
+	img: {
+		objectFit: "cover",
+	},
 
-    footer: {
-        position: "absolute",
-        bottom: "0.25rem",
-        left: "0.25rem",
-        right: "0.25rem",
-        padding: "2rem",
+	footer: {
+		position: "absolute",
+		bottom: "0.25rem",
+		left: "0.25rem",
+		right: "0.25rem",
+		padding: "2rem",
 
-        borderRadius: 8,
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
+		borderRadius: 8,
+		display: "flex",
+		justifyContent: "space-between",
+		alignItems: "center",
 
-        backgroundColor: "rgba(0, 0, 0, 0.6)",
+		backgroundColor: "rgba(0, 0, 0, 0.6)",
 
-        transform: "translateY(110%)",
-        opacity: 0,
-        transition: "all 0.2s ease-in-out",
-        overflow: "hidden",
+		transform: "translateY(110%)",
+		opacity: 0,
+		transition: "all 0.2s ease-in-out",
+		overflow: "hidden",
 
-        strong: {
-            fontSize: "$lg",
-            color: "$gray100",
-        },
+		strong: {
+			fontSize: "$lg",
+			color: "$gray100",
+		},
 
-        span: {
-            fontSize: "$xl",
-            fontWeight: "bold",
-            color: "$green300",
-        },
-    },
+		span: {
+			fontSize: "$xl",
+			fontWeight: "bold",
+			color: "$green300",
+		},
+	},
 
 
-    "&:hover": {
-        footer: {
-            transform: "translateY(0%)",
-            opacity: 1,
-        },
-    },
+	"&:hover": {
+		footer: {
+			transform: "translateY(0%)",
+			opacity: 1,
+		},
+	},
 });
